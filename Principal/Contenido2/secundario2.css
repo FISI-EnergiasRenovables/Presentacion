@@ -1,0 +1,118 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5fffb;
+    color: #15322f;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #0f766e;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0a4f46;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    color: #2b4b43;
+    margin-bottom: 15px;
+}
+
+.evento {
+    margin-bottom: 40px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 18px;
+    border: 2px solid #d5f5e6;
+    margin: 0 15px 15px 0;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+    img.derecha {
+        float: right;
+        margin-left: 20px;
+    }
+
+    img.izquierda {
+        float: left;
+        margin-right: 20px;
+    }
+
+ul, ol {
+    padding-left: 20px;
+}
+
+    ul li, ol li {
+        margin-bottom: 10px;
+    }
+
+.navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+    .navegacion a {
+        text-decoration: none;
+        color: white;
+        background-color: #0f766e;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-weight: bold;
+        text-align: center;
+        flex: 1 1 200px;
+    }
+
+        .navegacion a:hover {
+            background-color: #0a4f46;
+        }
+
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+    .responsive-iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+@media (max-width: 900px) {
+    img.derecha,
+    img.izquierda {
+        float: none;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .navegacion {
+        flex-direction: column;
+    }
+}
