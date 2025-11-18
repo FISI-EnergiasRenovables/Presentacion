@@ -1,0 +1,215 @@
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #0d8a6f;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.portada {
+    width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2fdf9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    text-align: center;
+    color: #0c3a2d;
+}
+
+.first::first-letter {
+    font-size: 42px;
+    color: #0d8a6f;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 20px auto 60px;
+    background-color: #ffffff;
+    border: 2px solid #cfeee3;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 25px 80px rgba(2, 68, 43, 0.08);
+}
+
+.introduccion {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+nav {
+    background: #0f3d3e;
+    border-radius: 16px;
+    padding: 20px;
+    color: #e9fff7;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: #7fffd4;
+        font-weight: bold;
+    }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+.multimedia {
+    margin-bottom: 20px;
+}
+
+    .multimedia iframe.podcast {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 480px;
+        height: 152px;
+        border: none;
+        border-radius: 16px;
+    }
+
+.imagenes .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+    .imagenes .galeria img {
+        width: 30%;
+        min-width: 220px;
+        margin: 10px;
+        border: 3px solid #d5f5e6;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(15, 61, 62, 0.15);
+    }
+
+.volver {
+    margin: 30px 0 10px;
+}
+
+    .volver .boton {
+        display: inline-block;
+        padding: 12px 26px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #0d8a6f;
+        text-decoration: none;
+        border-radius: 999px;
+        box-shadow: 0 12px 25px rgba(13, 138, 111, 0.3);
+    }
+
+        .volver .boton:hover {
+            background-color: #0a6d59;
+        }
+
+.tabla-guerra {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #c7e8da;
+}
+
+    .tabla-guerra th {
+        background-color: #0f3d3e;
+        color: #fff;
+        padding: 12px;
+        text-transform: uppercase;
+        border: 1px solid #0d2d2e;
+    }
+
+    .tabla-guerra td {
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #c7e8da;
+    }
+
+.aliados {
+    background-color: #e9fff7;
+    color: #0f3d3e;
+}
+
+.eje {
+    background-color: #fff7ea;
+    color: #5b3d00;
+}
+
+.tabla-guerra tr:hover {
+    background-color: #f6fff9;
+    transition: 0.3s;
+}
+
+.fire-hr {
+    border: none;
+    height: 6px;
+    background: linear-gradient(90deg, #0d8a6f, #4fd1c5, #a0e09d, #4fd1c5, #0d8a6f);
+    background-size: 400% 400%;
+    animation: flow 6s infinite;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(79, 209, 197, 0.4), 0 0 30px rgba(13, 138, 111, 0.3);
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    background-color: #f0fffa;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #d5f5e6;
+    font-family: 'Source Code Pro', 'Courier New', monospace;
+    font-size: 14px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+    .responsive-iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
