@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background: #f0fff7;
+    color: #12332d;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0f766e, #16a34a);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 50, 35, 0.08);
+}
+
+    /* ======= SUBTÍTULOS ORDENADOS ======= */
+
+    main h2 {
+        margin-top: 60px; /* Baja más los subtítulos */
+        margin-bottom: 10px;
+        color: #0f766e;
+        clear: both; /* Evita que se suban junto a imágenes */
+    }
+
+        /* Primer h2 no debe tener tanto espacio arriba */
+        main h2:first-of-type {
+            margin-top: 30px;
+        }
+
+    /* ======= TÍTULO "RESUMEN TÉCNICO" ======= */
+
+    main h3 {
+        margin-top: 60px;
+        margin-bottom: 15px;
+        color: #0f766e;
+        text-align: left;
+        clear: both; /* Asegura que no quede al costado de imágenes */
+    }
+
+p {
+    text-align: justify;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+img {
+    border-radius: 16px;
+    border: 2px solid #d2f5e9;
+    width: 42%;
+    height: auto;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+    img.left {
+        float: left;
+        margin: 10px 20px 10px 0;
+    }
+
+    img.right {
+        float: right;
+        margin: 10px 0 10px 20px;
+    }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e8fff4;
+    margin-top: 30px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    footer .button {
+        padding: 12px 24px;
+        text-decoration: none;
+        background: #0f766e;
+        color: white;
+        border-radius: 999px;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+
+        footer .button:hover {
+            transform: translateY(-2px);
+        }
+
+/* ======= TABLA MEJORADA ======= */
+
+.rearme-tabla {
+    width: 100%;
+    margin: 20px auto 40px; /* Mejor separación */
+    border-collapse: collapse;
+    font-family: inherit;
+    text-align: left;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+    .rearme-tabla th {
+        background-color: #0f766e;
+        color: white;
+        padding: 14px;
+    }
+
+    .rearme-tabla td {
+        padding: 14px;
+        border-bottom: 1px solid #e5f7f0;
+    }
+
+    .rearme-tabla tr:nth-child(even) {
+        background-color: #f8fffb;
+    }
+
+    .rearme-tabla tr:hover {
+        background-color: #e5fff4;
+    }
+
+/* ======= RESPONSIVE ======= */
+
+@media (max-width: 900px) {
+    img.left,
+    img.right {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+        footer .button {
+            width: 100%;
+            max-width: 320px;
+        }
+}
